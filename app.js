@@ -20,6 +20,7 @@ app.get('/testapi2', rateLimiterRoute)
 app.get('/testapi3', rateLimiterRoute)
 app.get('/testapi4', rateLimiterRoute) // does't have qutoa in env file. will use defult value
 
+// "127.0.0.1:3000/setContractUser.html" is a simple web-page for customizing limit for each api for each user
 app.post('/setContractUser', setContractUser)
 
 app.use(function (err, req, res, next) {
